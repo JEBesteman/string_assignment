@@ -17,10 +17,10 @@ report = f"{player_one_goal} scored in the {goal_0}nd minute\n{player_two_goal} 
 # part two
 player = "Frank Rijkaard"
 first_name = player[:player.find(" ")]
+last_name = player[player.find(" ") + 1:]
+last_name_len = len(last_name)
 
-last_name_len = len(player[player.find(" ") + 1:])
-
-name_short = f"{first_name[0]}. {player[len(first_name) + 1 :]}"
+name_short = f"{first_name[0]}. {last_name}"
 
 chant = (f"{first_name}! " * len(first_name)).rstrip()
 
